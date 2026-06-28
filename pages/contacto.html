@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - JVMB Aire Acondicionado</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        src="../img/logoprin.png"
+        alt="Logo JVMB Aire Acondicionado"
+        width="100"
+      />
+      <div class="header-container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./ventas.html">Ventas Online</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1>Contacto</h1>
+      <p>
+        Bienvenido al Sistema de Control de Mantenimiento Preventivo de Aires
+        Acondicionados
+      </p>
+    </header>
+
+    <main>
+      <section class="contacto-envoltorio">
+        <h2>Sección de contacto</h2>
+
+        <form action="https://formspree.io/f/xkoyjgkp" method="POST">
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tu@email.com"
+            required
+          />
+
+          <label for="nombre">Nombre (opcional):</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+          />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="6"
+            placeholder="Escribe tu consulta aquí..."
+            required
+          ></textarea>
+
+          <!-- Redirección después de enviar no se ejecuta no se por qué -->
+          <input type="hidden" name="_next" value="./pages/gracias.html" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nuevo mensaje desde el sitio web"
+          />
+
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <p class="enlace-mail">
+          <a href="mailto:jvmarrufo@gmail.com"
+            >También puedes enviarme un correo directo</a
+          >
+        </p>
+        <p class="enlace-mail">
+          <a href="tel:+525511223344">O llamarme al número de teléfono </a>
+        </p>
+        <ul class="redes-sociales">
+          <li>
+            <a href="..."
+              ><img src="../img/facebook.png" alt="Logo de facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="..."
+              ><img src="../img/instagram.png" alt="Logo de instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="..."
+              ><img src="../img/whatsapp.png" alt="Logo de whatsapp"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <br />
+    </main>
+
+    <footer>
+      <p>© 2026 José Marrufo. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

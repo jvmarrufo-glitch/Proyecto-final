@@ -1,0 +1,121 @@
+<!doctype html>
+<script src="../js/ventas.js" type="module"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ventas Online - JVMB Aire Acondicionado</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="brand">
+          <!-- ✅ Ruta corregida -->
+          <img src="../img/logoprin.png" alt="Logo JVMB" />
+          <span class="brand-name">JVMB Aire Acondicionado</span>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./ventas.html">Ventas Online</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Carrito en el header -->
+        <div class="cart-header">
+          <button id="btn-cart" class="cart-button">
+            🛒
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-ventas">
+        <div class="hero-content">
+          <h1>🛒 Ventas Online</h1>
+          <p class="hero-subtitle">
+            Repuestos y accesorios de calidad para tu aire acondicionado
+          </p>
+          <p class="hero-description">
+            Bienvenido a nuestra tienda virtual. Ofrecemos repuestos originales
+            y accesorios de las mejores marcas.
+          </p>
+          <div class="hero-features">
+            <div class="feature">
+              <span class="feature-icon">✓</span
+              ><span>Productos Originales</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✓</span><span>Garantía Incluida</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">✓</span><span>Envíos Rápidos</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="../img/jvmarrufo-trabajo.png"
+            alt="Repuestos de aire acondicionado"
+          />
+        </div>
+      </section>
+
+      <section class="productos-section">
+        <h2 class="section-title">🔧 REPUESTOS PARA AIRE ACONDICIONADO</h2>
+        <p class="section-subtitle">
+          Explora nuestro catálogo de productos disponibles
+        </p>
+        <div id="productos-grid" class="productos-grid"></div>
+      </section>
+
+      <div class="nota-importante">
+        <p>
+          ⚠️ <strong>Nota:</strong> Los precios pueden variar según el proveedor
+          y la ubicación.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 José Marrufo. Todos los derechos reservados.</p>
+      <p>
+        Contacto: <a href="mailto:jvmarrufo@gmail.com">jvmarrufo@gmail.com</a> |
+        +54 9 11 2664 9508
+      </p>
+    </footer>
+
+    <!-- ==================== MODAL DEL CARRITO ==================== -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <div class="cart-header-modal">
+          <h2>🛒 Tu Carrito</h2>
+          <button id="btn-close-cart" class="close-btn">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-total">
+          <strong>Total:</strong> <span id="cart-total-amount">$0</span>
+        </div>
+        <div class="cart-actions">
+          <button id="btn-empty-cart" class="btn-secondary">
+            Vaciar Carrito
+          </button>
+          <button id="btn-checkout" class="btn-primary">
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/ventas.js"></script>
+  </body>
+</html>
